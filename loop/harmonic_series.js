@@ -12,12 +12,13 @@ let res = 0
 while (i <= n){
     sum = 1/i
     res= res + sum
+    process.stdout.write(`1/${i}`)
     if(i != n){
-       process.stdout.write(`1/${i} + `);
+       process.stdout.write(` + `)
     }
     else{
-        process.stdout.write(`1/${i} `);
+        process.stdout.write(` = `)
     }
     i++
 }
-process.stdout.write(`= ${res}`);
+process.stdout.write(`${res}`);
